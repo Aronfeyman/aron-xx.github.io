@@ -33,13 +33,13 @@
     }
 }
 
-body {
+/*body {
     background-color: #eaeaea;
     margin: 0;
     color: #34495e;
     overflow-x: hidden;
     overflow-y: auto;
-}
+} */
 
 h1 {
     margin: 48px 0 22px -5px;
@@ -240,9 +240,9 @@ mark {
     margin-bottom: 0;
 }
 
-/*.bg-color {
+.bg-color {
     background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
-} */
+} 
 
 .text-color {
     color: #0f9d58 !important;
