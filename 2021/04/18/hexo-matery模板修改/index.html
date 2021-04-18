@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
@@ -376,7 +376,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    559
+                    414
                 </div>
                 
 
@@ -409,7 +409,11 @@
 <h4 id="去掉banner颜色动画"><a href="#去掉banner颜色动画" class="headerlink" title="去掉banner颜色动画"></a>去掉banner颜色动画</h4><ul>
 <li>在 ./theme文件夹下找到matery.css文件，使用快捷键(<em>ctrl+F</em>) 找出代码中的**.bg-cover:after**部分。注视掉即可</li>
 </ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">	<span class="selector-class">.bg-cover</span>:after &#123;</span><br><span class="line">    -webkit-animation: rainbow <span class="number">60s</span> infinite;</span><br><span class="line">    <span class="attribute">animation</span>: rainbow <span class="number">60s</span> infinite;</span><br><span class="line">&#125; </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre class=" language-css"><code class="language-css">    <span class="token number">.</span><span class="token property">bg-cover</span><span class="token punctuation">:</span>after &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
+    <span class="token property">-webkit-animation</span><span class="token punctuation">:</span> rainbow <span class="token number">60</span>s infinite<span class="token punctuation">;</span>
+    <span class="token property">animation</span><span class="token punctuation">:</span> rainbow <span class="token number">60</span>s infinite<span class="token punctuation">;</span>
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span> 
+</code></pre>
 <h4 id="安装live2d动画模型"><a href="#安装live2d动画模型" class="headerlink" title="安装live2d动画模型"></a>安装live2d动画模型</h4><blockquote>
 <p>参考教程：<a href="%22https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md%22">hexo-helper-live2d</a></p>
 </blockquote>
@@ -428,15 +432,24 @@
 <li><p>然后再themes/matery/layout/layout.ejs文件内添加下面的内容</p>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas class&#x3D;&quot;fireworks&quot; style&#x3D;&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;&#x2F;canvas&gt; </span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;&#x2F;cdn.bootcss.com&#x2F;animejs&#x2F;2.2.0&#x2F;anime.min.js&quot;&gt;&lt;&#x2F;script&gt; </span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;js&#x2F;fireworks.js&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<pre class=" language-ejs"><code class="language-ejs"><canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/fireworks.js"></script>
+</code></pre>
 <ul>
 <li><pre><code>添加樱花飘落和雪花飘落效果 在themes/matery/source/js目录下新建**sakura.js** **snow.js**   [sakura.js文件](&quot;https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.5/source/js/sakura.js&quot;)  [snow.js文件](&quot;https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.5/source/js/snow1.js&quot;)
 </code></pre>
 </li>
-<li><pre><code>然后再themes/matery/layout/layout.ejs文件内添加下面的内容
-</code></pre>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">	&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line">&#x2F;&#x2F;只在桌面版网页启用特效</span><br><span class="line">var windowWidth &#x3D; $(window).width();</span><br><span class="line">if (windowWidth &gt; 768) &#123;</span><br><span class="line">    document.write(&#39;&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;js&#x2F;sakura.js&quot;&gt;&lt;\&#x2F;script&gt;&#39;);</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;script src&#x3D;&quot;&#x2F;js&#x2F;snow.js&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure></li>
+<li>  然后再themes/matery/layout/layout.ejs文件内添加下面的内容<br>```ejs   <script type="text/javascript">
+//只在桌面版网页启用特效
+var windowWidth = $(window).width();
+if (windowWidth > 768) {
+  document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+}
+</script></li>
 </ul>
+<script src="/js/snow.js"></script>
+<p>```</p>
 
                 
             </div>
