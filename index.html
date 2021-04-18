@@ -496,7 +496,7 @@ hexo常用
         }
 
         coverSlider.carousel({
-            duration: Number('60'),
+            duration: Number('120'),
             fullWidth: true,
             indicators: 'true' === 'true',
             onCycleTo() {
@@ -514,7 +514,7 @@ hexo常用
         let autoCarousel = function () {
             carouselIntervalId = setInterval(function () {
                 coverSlider.carousel('next');
-            }, 20);
+            }, 5000);
         };
         autoCarousel();
         
