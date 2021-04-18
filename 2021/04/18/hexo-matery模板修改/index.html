@@ -376,7 +376,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    414
+                    572
                 </div>
                 
 
@@ -423,6 +423,9 @@
 <h4 id="创建自己的专属域名"><a href="#创建自己的专属域名" class="headerlink" title="创建自己的专属域名"></a>创建自己的专属域名</h4><blockquote>
 <p>通过阿里云这个域名代理商，把<strong>yourname.github.io</strong>换成<strong>yourname.com</strong>s</p>
 </blockquote>
+<h4 id="CDN访问加速"><a href="#CDN访问加速" class="headerlink" title="CDN访问加速"></a>CDN访问加速</h4><blockquote>
+<p>简介</p>
+</blockquote>
 <h4 id="点击鼠标显示烟花效果"><a href="#点击鼠标显示烟花效果" class="headerlink" title="点击鼠标显示烟花效果"></a>点击鼠标显示烟花效果</h4><blockquote>
 <p>转载<a href="%22https://liuruibin.com/posts/64eb.html%22">LRBlog</a></p>
 </blockquote>
@@ -437,10 +440,12 @@
 <script type="text/javascript" src="/js/fireworks.js"></script>
 </code></pre>
 <ul>
-<li><pre><code>添加樱花飘落和雪花飘落效果 在themes/matery/source/js目录下新建**sakura.js** **snow.js**   [sakura.js文件](&quot;https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.5/source/js/sakura.js&quot;)  [snow.js文件](&quot;https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.5/source/js/snow1.js&quot;)
+<li><pre><code>添加樱花飘落和雪花飘落效果 在themes/matery/source/js目录下新建**sakura.js** **snow.js**   [sakura.js文件](&quot;https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.5/source/js/sakura.js&quot;)  
 </code></pre>
+<p><a href="%22https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.5/source/js/snow1.js%22">snow.js文件</a></p>
 </li>
-<li>  然后再themes/matery/layout/layout.ejs文件内添加下面的内容<br>```ejs   <script type="text/javascript">
+<li><p>  然后再themes/matery/layout/layout.ejs文件内添加下面的内容<br>```ejs </p>
+<script type="text/javascript">
 //只在桌面版网页启用特效
 var windowWidth = $(window).width();
 if (windowWidth > 768) {
@@ -449,7 +454,22 @@ if (windowWidth > 768) {
 </script></li>
 </ul>
 <script src="/js/snow.js"></script>
-<p>```</p>
+<pre><code>
+
+### 网站提速
+
+&gt; 网页打开缓慢 ，可行的操作
+
+*     尝试安装 hexo-all-minifier 插件来压缩文件
+*    减少不必要的 js 插件，例如字数统计、动态背景。
+*     查找并解决拖慢速度的资源，以 Chrome 浏览器为例：
+    1. 页面中点击右键，选择「检查」
+    2. 在右边的窗口中「Network」选项卡，并勾选「Disable cache」
+*     刷新网页，查看加载速度慢的资源。
+    1. 加载缓慢的图片，建议使用 CDN
+    2. 加载缓慢的可以不用的 js 插件，建议舍弃
+    3. 加载缓慢却必须使用的 js 插件，建议下载并自己上传至 **jsdelivr**
+</code></pre>
 
                 
             </div>
