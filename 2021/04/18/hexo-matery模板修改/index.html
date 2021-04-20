@@ -369,14 +369,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-19
+                    2021-04-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    644
+                    626
                 </div>
                 
 
@@ -441,14 +441,12 @@
 <pre class="line-numbers language-ejs" data-language="ejs"><code class="language-ejs"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>canvas</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>fireworks<span class="token punctuation">"</span></span> <span class="token style-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token style language-css"><span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span><span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><span class="token property">z-index</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span> <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span> <span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>canvas</span><span class="token punctuation">></span></span> 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>//cdn.bootcss.com/animejs/2.2.0/anime.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span> 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/js/fireworks.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<hr>
+<blockquote>
+<p>添加樱花飘落和雪花飘落效果 在themes/matery/source/js目录下新建<strong>sakura.js</strong> <strong>snow.js</strong>   <a href="%22https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.5/source/js/sakura.js%22">sakura.js文件</a><br><a href="%22https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.5/source/js/snow1.js%22">snow.js文件</a></p>
+</blockquote>
 <ul>
-<li><pre><code>添加樱花飘落和雪花飘落效果 在themes/matery/source/js目录下新建**sakura.js** **snow.js**   [sakura.js文件](&quot;https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.5/source/js/sakura.js&quot;)  
-</code></pre>
-<p><a href="%22https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.5/source/js/snow1.js%22">snow.js文件</a></p>
-</li>
-<li><pre><code>然后再themes/matery/layout/layout.ejs文件内添加下面的内容
-</code></pre>
-<pre class="line-numbers language-ejs" data-language="ejs"><code class="language-ejs"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+<li> 然后再themes/matery/layout/layout.ejs文件内添加下面的内容<pre class="line-numbers language-ejs" data-language="ejs"><code class="language-ejs"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
 <span class="token comment">//只在桌面版网页启用特效</span>
 <span class="token keyword">var</span> windowWidth <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">if</span> <span class="token punctuation">(</span>windowWidth <span class="token operator">></span> <span class="token number">768</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
@@ -465,13 +463,7 @@
 <li><pre><code>尝试安装 hexo-all-minifier 插件来压缩文件
 </code></pre>
 </li>
-<li>   减少不必要的 js 插件，例如字数统计、动态背景。</li>
-<li><pre><code>查找并解决拖慢速度的资源，以 Chrome 浏览器为例：    1. 页面中点击右键，选择「检查」    2. 在右边的窗口中「Network」选项卡，并勾选「Disable cache」
-</code></pre>
-</li>
-<li><pre><code>刷新网页，查看加载速度慢的资源。    1. 加载缓慢的图片，建议使用 CDN    2. 加载缓慢的可以不用的 js 插件，建议舍弃    3. 加载缓慢却必须使用的 js 插件，建议下载并自己上传至 **jsdelivr**
-</code></pre>
-</li>
+<li>   减少不必要的 js 插件，例如字数统计、动态背景。<h4 id="查找并解决拖慢速度的资源，以-Chrome-浏览器为例：-1-页面中点击右键，选择「检查」-2-在右边的窗口中「Network」选项卡，并勾选「Disable-cache」"><a href="#查找并解决拖慢速度的资源，以-Chrome-浏览器为例：-1-页面中点击右键，选择「检查」-2-在右边的窗口中「Network」选项卡，并勾选「Disable-cache」" class="headerlink" title="查找并解决拖慢速度的资源，以 Chrome 浏览器为例：    1. 页面中点击右键，选择「检查」    2. 在右边的窗口中「Network」选项卡，并勾选「Disable cache」"></a>查找并解决拖慢速度的资源，以 Chrome 浏览器为例：    1. 页面中点击右键，选择「检查」    2. 在右边的窗口中「Network」选项卡，并勾选「Disable cache」</h4><h4 id="刷新网页，查看加载速度慢的资源。-1-加载缓慢的图片，建议使用-CDN-2-加载缓慢的可以不用的-js-插件，建议舍弃-3-加载缓慢却必须使用的-js-插件，建议下载并自己上传至-jsdelivr"><a href="#刷新网页，查看加载速度慢的资源。-1-加载缓慢的图片，建议使用-CDN-2-加载缓慢的可以不用的-js-插件，建议舍弃-3-加载缓慢却必须使用的-js-插件，建议下载并自己上传至-jsdelivr" class="headerlink" title="刷新网页，查看加载速度慢的资源。    1. 加载缓慢的图片，建议使用 CDN    2. 加载缓慢的可以不用的 js 插件，建议舍弃    3. 加载缓慢却必须使用的 js 插件，建议下载并自己上传至 jsdelivr"></a>刷新网页，查看加载速度慢的资源。    1. 加载缓慢的图片，建议使用 CDN    2. 加载缓慢的可以不用的 js 插件，建议舍弃    3. 加载缓慢却必须使用的 js 插件，建议下载并自己上传至 <strong>jsdelivr</strong></h4></li>
 </ul>
 
                 
