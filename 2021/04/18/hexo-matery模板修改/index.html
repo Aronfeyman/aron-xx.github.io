@@ -376,7 +376,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    626
+                    621
                 </div>
                 
 
@@ -463,7 +463,12 @@
 <li><pre><code>尝试安装 hexo-all-minifier 插件来压缩文件
 </code></pre>
 </li>
-<li>   减少不必要的 js 插件，例如字数统计、动态背景。<h4 id="查找并解决拖慢速度的资源，以-Chrome-浏览器为例：-1-页面中点击右键，选择「检查」-2-在右边的窗口中「Network」选项卡，并勾选「Disable-cache」"><a href="#查找并解决拖慢速度的资源，以-Chrome-浏览器为例：-1-页面中点击右键，选择「检查」-2-在右边的窗口中「Network」选项卡，并勾选「Disable-cache」" class="headerlink" title="查找并解决拖慢速度的资源，以 Chrome 浏览器为例：    1. 页面中点击右键，选择「检查」    2. 在右边的窗口中「Network」选项卡，并勾选「Disable cache」"></a>查找并解决拖慢速度的资源，以 Chrome 浏览器为例：    1. 页面中点击右键，选择「检查」    2. 在右边的窗口中「Network」选项卡，并勾选「Disable cache」</h4><h4 id="刷新网页，查看加载速度慢的资源。-1-加载缓慢的图片，建议使用-CDN-2-加载缓慢的可以不用的-js-插件，建议舍弃-3-加载缓慢却必须使用的-js-插件，建议下载并自己上传至-jsdelivr"><a href="#刷新网页，查看加载速度慢的资源。-1-加载缓慢的图片，建议使用-CDN-2-加载缓慢的可以不用的-js-插件，建议舍弃-3-加载缓慢却必须使用的-js-插件，建议下载并自己上传至-jsdelivr" class="headerlink" title="刷新网页，查看加载速度慢的资源。    1. 加载缓慢的图片，建议使用 CDN    2. 加载缓慢的可以不用的 js 插件，建议舍弃    3. 加载缓慢却必须使用的 js 插件，建议下载并自己上传至 jsdelivr"></a>刷新网页，查看加载速度慢的资源。    1. 加载缓慢的图片，建议使用 CDN    2. 加载缓慢的可以不用的 js 插件，建议舍弃    3. 加载缓慢却必须使用的 js 插件，建议下载并自己上传至 <strong>jsdelivr</strong></h4></li>
+<li>   减少不必要的 js 插件，例如字数统计、动态背景。<h4 id="查找并解决拖慢速度的资源，以-Chrome-浏览器为例："><a href="#查找并解决拖慢速度的资源，以-Chrome-浏览器为例：" class="headerlink" title="查找并解决拖慢速度的资源，以 Chrome 浏览器为例："></a>查找并解决拖慢速度的资源，以 Chrome 浏览器为例：</h4></li>
+<li>页面中点击右键，选择「检查」</li>
+<li>在右边的窗口中「Network」选项卡，并勾选「Disable cache」<h4 id="刷新网页，查看加载速度慢的资源。"><a href="#刷新网页，查看加载速度慢的资源。" class="headerlink" title="刷新网页，查看加载速度慢的资源。"></a>刷新网页，查看加载速度慢的资源。</h4></li>
+<li>加载缓慢的图片，建议使用 CDN</li>
+<li>加载缓慢的可以不用的 js 插件，建议舍弃</li>
+<li>加载缓慢却必须使用的 js 插件，建议下载并自己上传至 <strong>jsdelivr</strong></li>
 </ul>
 
                 
@@ -1043,12 +1048,12 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
+<script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
