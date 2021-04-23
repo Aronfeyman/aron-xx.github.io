@@ -112,10 +112,10 @@ theme: hexo-theme-matery-master
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
  - type:   git 
-   repo:   https://github.com/aron-xx/aron-xx.github.io.git
+   #repo:   https://github.com/aron-xx/aron-xx.github.io.git
    branch: master
  - type:   git
-   repo:   https://gitee.com/kiki_love/kiki_love.git  
+  # repo:   https://gitee.com/kiki_love/kiki_love.git  
            #gitee: git@gitee.com:kiki_love/kiki_love.git 
           
    branch: master
