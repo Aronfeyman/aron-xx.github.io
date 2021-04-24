@@ -1,5 +1,6 @@
 ---
-layout: layout
+layout: post
+abbrlink: 2
 date: 2021-04-23 16:42:20
 title:
 tags:
