@@ -345,6 +345,11 @@ after_success:
 ]]></content>
   </entry>
   <entry>
+    <title>i am configing my proflie</title>
+    <url>/2021/04/23/i-am-configing-my-proflie/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>kiki&#39;s blog</title>
     <url>/2021/04/17/kiki-s-blog/</url>
     <content><![CDATA[<h1 id="kiki’s-blog"><a href="#kiki’s-blog" class="headerlink" title="kiki’s blog"></a>kiki’s blog</h1>]]></content>
@@ -390,10 +395,5 @@ after_success:
 <li>《数学》—蒂莫西•高尔斯     牛津通识读本</li>
 </ul>
 ]]></content>
-  </entry>
-  <entry>
-    <title>i am configing my proflie</title>
-    <url>/2021/04/23/i-am-configing-my-proflie/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
