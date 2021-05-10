@@ -345,20 +345,7 @@ after_success:
 ]]></content>
   </entry>
   <entry>
-    <title>i am configing my proflie</title>
-    <url>/2021/04/23/i-am-configing-my-proflie/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>kiki&#39;s blog</title>
-    <url>/2021/04/17/kiki-s-blog/</url>
-    <content><![CDATA[<h1 id="kiki’s-blog"><a href="#kiki’s-blog" class="headerlink" title="kiki’s blog"></a>kiki’s blog</h1>]]></content>
-      <tags>
-        <tag>自述</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
+    <title>数学学习计划</title>
     <url>/2021/04/21/%E6%95%B0%E5%AD%A6%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
     <content><![CDATA[<h1 id="数学学习路线及时间规划"><a href="#数学学习路线及时间规划" class="headerlink" title="数学学习路线及时间规划"></a>数学学习路线及时间规划</h1><blockquote>
 <p>这里做一个简单的规划路线，如何在规定的时间内比较圆满的完成自己的目标？<br>数学的学习不是一蹴而就，而是一个漫长的学习过程，但其内容的掌握又必须在规定的时间完成，那如何保证自己真正地理解每一个概念而又不至于为了理解一个概念而花费太多时间呢？既然要在规定的时间内完成自己的数学学习计划，那么主次就要分明，哪些概念是至关重要的？哪些概念是次要的？重要的定理和重要的证明过程应该深刻影响后面的概念的，或者说起到承上启下的作用的。其次做习题就应该是有选择的去做，习题做完以后必须思考这些习题教会了我们什么，是教会了我们掌握了一种证明的技巧，还是教会了我们运用定理去解决一些之前没掌握这个定理就不能解决的问题？又或者说教会了我们理解了一些重要的数学概念？<br>数学的学习应该分为三个过程：看教材<del>做习题</del>讨论及反思（三者的权重如何划分应该根据自身的学习情况加以调整，但这三者缺一不可，必须同时进行。）<br>时限：2学期</p>
@@ -395,5 +382,11 @@ after_success:
 <li>《数学》—蒂莫西•高尔斯     牛津通识读本</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>数学</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+      </tags>
   </entry>
 </search>
