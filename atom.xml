@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-11T14:01:23.852Z</updated>
+  <updated>2021-05-12T17:07:32.005Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2021/05/11/STM32%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>http://example.com/2021/05/11/STM32%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
     <published>2021-05-11T12:06:42.000Z</published>
-    <updated>2021-05-11T14:01:23.852Z</updated>
+    <updated>2021-05-12T17:07:32.005Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="STM32环境搭建"><a href="#STM32环境搭建" class="headerlink" title="STM32环境搭建"></a>STM32环境搭建</h1><h2 id="STM32CubeMX搭建"><a href="#STM32CubeMX搭建" class="headerlink" title="STM32CubeMX搭建"></a>STM32CubeMX搭建</h2><blockquote><p>参考教程 <a href="https://blog.csdn.net/as480133937/article/details/98885316">STM32CubeMX安装教程</a><br><strong>STM32CubeMX</strong> 是STM32 芯片图形化配置工具<br>安装CubeMx一共需要三个工具</p><ul><li>JRE （Java Runtime Environment)  Java运行环境 运行JAVA程序所必须的环境的集合<a href="https://www.java.com/en/download/manual.jsp">官方下载地址</a></li><li>STM32CubeMX<a href="https://www.st.com/en/development-tools/stm32cubemx.html?sc=stm32cubemx">官方下载地址</a></li><li>HAL库   STM32 HAL固件库  STM32 HAL固件库是Hardware Abstraction Layer的缩写，中文名称是：硬件抽象层。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="STM32环境搭建"><a href="#STM32环境搭建" class="headerlink" title="STM32环境搭建"></a>STM32环境搭建</h1><h2 id="STM32CubeMX搭建"><a href="#STM32CubeMX搭建" class="headerlink" title="STM32CubeMX搭建"></a>STM32CubeMX搭建</h2><blockquote><p>参考教程 <a href="https://blog.csdn.net/as480133937/article/details/98885316">STM32CubeMX安装教程</a><br><strong>STM32CubeMX</strong> 是STM32 芯片图形化配置工具<br>安装CubeMx一共需要三个工具</p><ul><li>JRE （Java Runtime Environment)  Java运行环境 运行JAVA程序所必须的环境的集合<a href="https://www.java.com/en/download/manual.jsp">官方下载地址</a></li><li>STM32CubeMX<a href="https://www.st.com/en/development-tools/stm32cubemx.html?sc=stm32cubemx">官方下载地址</a></li><li>HAL库   STM32 HAL固件库  STM32 HAL固件库是Hardware Abstraction Layer的缩写，中文名称是：硬件抽象层。</li></ul></blockquote><h2 id="为vscode配置STM32开发环境"><a href="#为vscode配置STM32开发环境" class="headerlink" title="为vscode配置STM32开发环境"></a>为vscode配置STM32开发环境</h2><blockquote><p>参考教程: <a href="https://www.bilibili.com/read/cv6165143/">vscode配置stm32</a></p></blockquote><h2 id="下载keil-uVision5软件"><a href="#下载keil-uVision5软件" class="headerlink" title="下载keil uVision5软件"></a>下载keil uVision5软件</h2><blockquote><p>参考博文: <a href="https://blog.csdn.net/Joker00007/article/details/95522120?utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-2.baidujs&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromMachineLearnPai2~default-2.baidujs">keil配置c51和mdk-arm</a></p></blockquote>]]></content>
     
     
       
