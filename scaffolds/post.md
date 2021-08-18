@@ -2,11 +2,12 @@
 title: {{ title }}
 date: {{ date }}
 top: false
-cover: false
+cover: true
 password:
 toc: true
-mathjax: true
+mathjax: false
 summary:
 tags:
 categories:
+abbrlink:
 ---

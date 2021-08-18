@@ -1,17 +1,13 @@
 ---
-title: 	利用hexo框架搭建博客	
-top: 	true
-cover: 	true
-toc: 	false
-mathjax: 	false
-categories: 	工具
-keywords: 	hexo搭建指南
+title: 利用hexo框架搭建博客
+top: true
+cover: true
+categories: 工具
+keywords: hexo搭建指南
 tags:
   - hexo
+summary: hexo搭建笔记
 abbrlink: 22223
-img:
-password:
-summary:	false
 ---
 
 
@@ -30,7 +26,6 @@ summary:	false
 ## hexo简介
 > 参考hexo官方文档 [hexo](https://hexo.io/zh-cn/docs/ )
 > Hexo是高效的静态站点生成框架，它基于Node.js
-> 
 
 ### hexo常用命令
 

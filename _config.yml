@@ -4,9 +4,9 @@
 
 # Site
 title: kiki
-subtitle: 
+#subtitle: 
 description: "生活中有趣的事情总是让生活充满着希望"
-keywords: [HTML, CSS, JavaScript, JQuery, React, Vue.js]
+keywords: [C, C++, python, JQuery, React, Vue.js]
 author: kiki
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -112,10 +112,10 @@ theme: hexo-theme-matery-master
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
  - type:   git 
-   #repo:   https://github.com/aron-xx/aron-xx.github.io.git
+   repo:   https://github.com/aron-xx/aron-xx.github.io.git
    branch: master
  - type:   git
-  # repo:   https://gitee.com/kiki_love/kiki_love.git  
+   repo:   https://gitee.com/kiki_love/kiki_love.git  
            #gitee: git@gitee.com:kiki_love/kiki_love.git 
           
    branch: master
@@ -147,4 +147,4 @@ mobile:
 lazyload:
   enable: true
   onlypost: false
-  loadingImg: /medias/featureimages/21.jpg
+  loadingImg: /medias/头像.jpg

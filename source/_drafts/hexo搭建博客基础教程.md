@@ -18,7 +18,14 @@
 >了解windows系统下的包管理工具-chocolatey [chocolatey官方文档](https://docs.chocolatey.org/en-us/)
 >了解npm包管理工具,知道简单的命令.
 
+### hexo搭建步骤
+> 预备环境: 电脑已经安装**npm，node.js , git ** 工具.
+> 在任意路径下，创建一个文件夹，作为你本地的blog根目录
 
+* hexo init <blog根目录名>
+* cd <blog根目录名>
+* npm install
+#### 在blog根目录下安装有用的模块
 
 
 
