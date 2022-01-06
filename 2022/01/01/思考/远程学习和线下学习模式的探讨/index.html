@@ -317,6 +317,19 @@
 </header>
 
     
+<script src="../../../../../libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '../../../../../index.html';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -493,8 +506,18 @@
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    1 分
+                </div>
+                
 
                 
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -629,18 +652,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="">
+                <a href="../../../07/%E6%AF%8F%E6%97%A5%E9%81%90%E6%83%B3/%E6%8D%95%E6%8D%89%E8%87%AA%E5%B7%B1%E7%9A%84%E6%84%8F%E8%AF%86/">
                     <div class="card-image">
                         
                         
-                        <img src="../../../../../medias/featureimages/9.jpg" class="responsive-img" alt="充分利用远程学习和线下学习模式">
+                        <img src="../../../../../medias/featureimages/6.jpg" class="responsive-img" alt="捕捉自己的意识">
                         
-                        <span class="card-title">充分利用远程学习和线下学习模式</span>
+                        <span class="card-title">捕捉自己的意识</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -650,35 +672,30 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-07
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="../../../../../categories/%E6%8D%95%E6%8D%89%E7%81%B5%E6%84%9F/" class="post-category">
-                                    捕捉灵感
-                                </a>
-                            
-                            <a href="../../../../../categories/%E6%8D%95%E6%8D%89%E7%81%B5%E6%84%9F/%E6%80%9D%E8%80%83/" class="post-category">
-                                    思考
+                            <a href="../../../../../categories/%E6%AF%8F%E6%97%A5%E9%81%90%E6%80%9D/" class="post-category">
+                                    每日遐思
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="../../../../../tags/%E6%80%9D%E8%80%83/">
-                        <span class="chip bg-color">思考</span>
+                    <a href="../../../../../tags/%E6%AF%8F%E6%97%A5%E9%81%90%E6%80%9D/">
+                        <span class="chip bg-color">每日遐思</span>
                     </a>
                     
-                    <a href="../../../../../tags/%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">学习</span>
+                    <a href="../../../../../tags/%E6%8D%95%E6%8D%89%E7%81%B5%E6%84%9F/">
+                        <span class="chip bg-color">捕捉灵感</span>
                     </a>
                     
                 </div>
