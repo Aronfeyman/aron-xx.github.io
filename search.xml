@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>hexo报错指南</title>
+      <link href="/2022/05/23/hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%8D%9A%E5%AE%A2/hexo%E6%8A%A5%E9%94%99%E6%8C%87%E5%8D%97/"/>
+      <url>/2022/05/23/hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%8D%9A%E5%AE%A2/hexo%E6%8A%A5%E9%94%99%E6%8C%87%E5%8D%97/</url>
+      
+        <content type="html"><![CDATA[<p>常见问题<br>通过hexo g -d部署时报Error: Spawn failed错误:<br>这是由于git本地记录的提交版本号与github上不一致导致的，通过git reset –hard commitCode即可解决。</p><p>检查本地最近提交记录，获取最后一次提交记录的更新时间及标识，如280a7fdd46fcfd7d34e652aec15523dcd247fac8bash cd .deploy_git cat .git/logs/HEAD<br>获取github pages服务所关联分支的最近一次提交记录，获取更新时间及标识。地址一般为：<a href="https://github.com/%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BB%93%E5%BA%93%E5%90%8D/commits/%E5%88%86%E6%94%AF%E5%90%8D%EF%BC%8C%E5%A6%82https://github.com/lxl80/blog/commits/gh-pages">https://github.com/用户名/仓库名/commits/分支名，如https://github.com/lxl80/blog/commits/gh-pages</a><br>如果发现提交最新的提交时间/标识不一致，通过以下命令即可解决: bash git reset –hard f085038efdf79546c09641d37b2a2429c1ae8e60 #github上最新的提交标识</p><p>YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (8:12)——-配置文件_config.yml文件报错</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo框架 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建hexo所必须的依赖环境</title>
+      <link href="/2022/05/23/hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%8D%9A%E5%AE%A2/hexo%E5%88%9D%E5%A7%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+      <url>/2022/05/23/hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%8D%9A%E5%AE%A2/hexo%E5%88%9D%E5%A7%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+      
+        <content type="html"><![CDATA[<h1 id="hexo初始环境搭建"><a href="#hexo初始环境搭建" class="headerlink" title="hexo初始环境搭建"></a>hexo初始环境搭建</h1><blockquote><p>Windows系统下:<br>nvs–&gt;node.js–&gt;hexo</p></blockquote><h2 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h2><ul><li>通过chocolatey安装nvs</li><li>通过nvs安装node.js</li><li><h3 id="node包添加到系统环境变量中—-path"><a href="#node包添加到系统环境变量中—-path" class="headerlink" title="node包添加到系统环境变量中—-path"></a>node包添加到系统环境变量中—-path</h3><blockquote><p>通过node中的npm命令来安装hexo框架.</p></blockquote></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo框架 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>加速hexo</title>
+      <link href="/2022/05/23/hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%8D%9A%E5%AE%A2/hexo-%E4%BF%AE%E6%94%B9/"/>
+      <url>/2022/05/23/hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%8D%9A%E5%AE%A2/hexo-%E4%BF%AE%E6%94%B9/</url>
+      
+        <content type="html"><![CDATA[<h1 id="hexo加速响应"><a href="#hexo加速响应" class="headerlink" title="hexo加速响应"></a>hexo加速响应</h1><blockquote><p>参考链接<a href="%22https://my.oschina.net/mflyyou/blog/3189579%22">hexo部署</a><br>参考链接<a href="%22https://blog.csdn.net/sinat_37781304/article/details/82729029%22">hexo详细部署</a></p></blockquote><h2 id="CDN加速"><a href="#CDN加速" class="headerlink" title="CDN加速"></a>CDN加速</h2><ul><li>把 themes\hexo-theme-matery-master\source下的文件放到oss上去，利用CDN加速</li></ul><h2 id="hexo命令"><a href="#hexo命令" class="headerlink" title="hexo命令"></a>hexo命令</h2><h3 id="hexo-draft-命令"><a href="#hexo-draft-命令" class="headerlink" title="hexo draft 命令"></a>hexo draft 命令</h3><h4 id="hexo-new-draft-newpage"><a href="#hexo-new-draft-newpage" class="headerlink" title="==hexo new draft newpage=="></a>==hexo new draft newpage==</h4><ul><li>   这样会在source/_draft中新建一个newpage.md文件<h4 id="hexo-server-–draft"><a href="#hexo-server-–draft" class="headerlink" title="==hexo server –draft=="></a>==hexo server –draft==</h4></li><li>   在本地端口中开启服务预览<h4 id="hexo-publish-draft-newpage"><a href="#hexo-publish-draft-newpage" class="headerlink" title="==hexo publish draft newpage=="></a>==hexo publish draft newpage==</h4></li><li>   就会自动把newpage.md发送到post中</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo框架 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>捕捉自己的意识</title>
       <link href="/2022/01/07/%E6%AF%8F%E6%97%A5%E9%81%90%E6%83%B3/%E6%8D%95%E6%8D%89%E8%87%AA%E5%B7%B1%E7%9A%84%E6%84%8F%E8%AF%86/"/>
       <url>/2022/01/07/%E6%AF%8F%E6%97%A5%E9%81%90%E6%83%B3/%E6%8D%95%E6%8D%89%E8%87%AA%E5%B7%B1%E7%9A%84%E6%84%8F%E8%AF%86/</url>
